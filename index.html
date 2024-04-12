@@ -1,11 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="page2.html">到第二頁bbbaaaff</a>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>個人網頁</title>
+        <style>
+            /* CSS樣式 */
+            body {
+                background-color: #e9eff4; /* 修改背景顏色 */
+                color: #333;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .section-title {
+                background-color: #003566;
+                color: #fff;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .profile-pic {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border: 5px solid #ffc300;
+            }
+            .contact-info li {
+                list-style: none;
+                margin-bottom: 10px;
+                color: #555;
+            }
+            .competition-section, .club-section {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .competition-section .competition-item, .club-section .club-item {
+                flex: 0 0 calc(33.33% - 20px);
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .competition-section .competition-item img, .club-section .club-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .competition-section .competition-item p, .club-section .club-item p {
+                padding: 10px;
+                background-color: #ffc300;
+                color: #003566;
+                margin: 0;
+                font-size: 14px;
+            }
+            .club-section .club-item video {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .skills-section {
+                background-color: #ffc300;
+                color: #003566;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .skills-section h3 {
+                margin-top: 0;
+            }
+            .skills-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .skills-list li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- 第一部分：個人檔案 -->
+            <div class="section-title">
+                <h2>個人檔案</h2>
+            </div>
+            <div class="profile-section">
+                <div class="left">
+                    <!-- 放置圓形照片 -->
+                    <img src="your_photo.jpg" alt="你的照片" class="profile-pic">
+                    <!-- 中文名字 -->
+                    <h2>你的中文名字</h2>
+                    <!-- 英文名字 -->
+                    <h3>Your English Name</h3>
+                </div>
+                <div class="right">
+                    <!-- 聯絡資訊 -->
+                    <ul class="contact-info">
+                        <li>電話: +123456789</li>
+                        <li>FB: <a href="https://www.facebook.com/yourprofile">yourprofile</a></li>
+                        <li>IG: <a href="https://www.instagram.com/yourprofile">yourprofile</a></li>
+                        <li>Email: yourname@example.com</li>
+                        <li>地址: 你的地址</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- 第二部分：學習及工作經歷 -->
+            <div class="section-title">
+                <h2>學習及工作經歷</h2>
+            </div>
+            <div class="experience-section">
+                <div class="left">
+                    <!-- 三個框框介紹 -->
+                    <div class="education">
+                        <h3>學習經歷</h3>
+                        <p>你的科系</p>
+                        <p>你的輔系</p>
+                        <p>你的高中</p>
+                    </div>
+                    <!-- 工作經歷 -->
+                    <div class="work">
+                        <h3>工作經歷</h3>
+                        <p>職稱: xxx</p>
+                        <p>地點: xxx</p>
+                        <p>時間: xxx</p>
+                        <p>工作介紹: xxx</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <!-- 這裡放你的圖片位置 -->
+                    <img src="education_pic.jpg" alt="學習圖片">
+                    <img src="work_pic.jpg" alt="工作圖片">
+                </div>
+            </div>
+             <!-- 第四部分：技能 -->
+             <div class="skills-section">
+                <h2>技能</h2>
+                <div class="skills-list">
+                    <h3>外語技能</h3>
+                    <ul>
+                        <li>TOEIC: 920</li>
+                        <!-- 在這裡添加你的外語技能 -->
+                    </ul>
+                    <h3>程式語言技能</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>JAVA</li>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>AutoCAD</li>
+                        <li>Android 程式設計</li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <!-- 第三部分：競賽 -->
+            <div class="section-title">
+                <h2>競賽</h2>
+            </div>
+            <div class="competition-section">
+                <div class="competition-item">
+                    <img src="competition1_pic.jpg" alt="競賽一圖片">
+                    <p>競賽一介紹</p>
+                </div>
+                <div class="competition-item">
+                    <img src="competition2_pic.jpg" alt="競賽二圖片">
+                    <p>競賽二介紹</p>
+                </div>
+                <div class="competition-item">
+                    <!-- 假設影片連結為 YouTube -->
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>競賽三介紹</p>
+                </div>
+            </div>
+            <!-- 第五部分：社團及經歷 -->
+            <div class="section-title">
+                <h2>社團及經歷</h2>
+            </div>
+            <div class="club-section">
+                <div class="club-item">
+                    <img src="club1_pic.jpg" alt="社團一圖片">
+                    <p>社團一介紹</p>
+                </div>
+                <div class="club-item">
+                    <img src="club2_pic.jpg" alt="社團二圖片">
+                    <p>社團二介紹</p>
+                </div>
+                <div class="club-item">
+                    <!-- 假設影片連結為 YouTube -->
+                    <video controls>
+                        <source src="club3_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>社團三介紹</p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
