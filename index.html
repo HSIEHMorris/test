@@ -1,243 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人網頁</title>
-    <style>
-        /* CSS樣式 */
-        body {
-            background-color: #e9eff4; /* 修改背景顏色 */
-            color: #333;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background-color: #003566;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        nav {
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-        nav ul li {
-            display: inline;
-        }
-        .profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 5px solid #ffc300;
-        }
-        .contact-info li {
-            list-style: none;
-            margin-bottom: 10px;
-            color: #555;
-        }
-        .competition-section, .club-section {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .competition-section .competition-item, .club-section .club-item {
-            flex: 0 0 calc(33.33% - 20px);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .competition-section .competition-item img, .club-section .club-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .competition-section .competition-item p, .club-section .club-item p {
-            padding: 10px;
-            background-color: #ffc300;
-            color: #003566;
-            margin: 0;
-            font-size: 14px;
-        }
-        .club-section .club-item video {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .skills-section {
-            background-color: #ffc300;
-            color: #003566;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-        .skills-section h2 {
-            margin-top: 0;
-        }
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .skills-list li {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>個人網頁</h1>
-            <nav>
-                <ul>
-                    <li><a href="#profile">個人檔案</a></li>
-                    <li><a href="#experience">學習及工作經歷</a></li>
-                    <li><a href="#competition">競賽</a></li>
-                    <li><a href="#club">社團及經歷</a></li>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>個人網頁</title>
+        <style>
+            body {
+                margin:0px;
+                background-color:hsl(52, 94%, 94%);
+            }
+            main{
+                padding: 20px;
+            }
+            header {
+                background-color: #ccd5ae;
+                color: #fff;
+                padding: 20px;
+                margin:0px;
+                text-align: center;
+            }
+            nav {
+                background-color: #e9edc9;
+                font-family: Arial;
+                text-align: center;
+            }
+            nav a{
+                display: inline-block;
+                padding: 14px 16px;
+                color:black;
+            }
+            nav a:hover{
+                background-color: #ccd5ae;
+                color: white;
+            }
+            .profile{
+                background-size: cover;
+                background-color: #faedcd;
+                padding: 20px;
+                margin: 20px 10px;
+                border-radius: 15px;
+                display: flex;
+                gap: 240px;
+            }
+            .profile-pic {
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border: 5px solid #ffc300;
+            }
+            .left{
+                text-align: center;
+                margin-left: 80px;
+            }
+            .contact-info li {
+                list-style: none;
+                margin-bottom: 10px;
+                color: #555;
+            }
+            .competition-section, .club-section {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+                background-color: #e9edc9;
+                color: #003566;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                padding-left: 50px;
+            }
+            .competition-section .competition-item, .club-section .club-item {
+                flex: 0 0 calc(33.3% - 20px);
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .competition-section .competition-item img, .club-section .club-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .competition-section .competition-item p, .club-section .club-item p {
+                padding: 10px;
+                background-color:#faedcd;
+                color: #003566;
+                margin: 0;
+                font-size: 14px;
+                text-align: center;
+            }
+            .club-section .club-item video {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .skills-section {
+                background-color: #e9edc9;
+                color: #003566;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                padding-left: 50px;
+            }
+            .skills-section h2 {
+                margin-top: 0;
+            }
+            .skills-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .skills-list li {
+                margin-bottom: 10px;
+            }
+            .experience-section {
+                background-color: #faedcd;
+                font-weight:bold;
+                padding: 20px;
+                padding-left: 50px;
+                margin: 20px 10px;
+                border-radius: 15px;
+                display: flex;
+
+            }
+            .experience-section .experience-item {
+                flex: 1;
+            }
+            footer{
+                background-color: #ccd5ae;
+                color: #444444;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>個人網頁</h1>
+    </header>
+    <nav>
+        <a href="#profile">學習及工作經歷</a>
+        <a href="#experience">技能</a>
+        <a href="#competition">競賽</a>
+        <a href="#club">社團及經歷</a>
+    </nav>
+    <main>
+    <article id="profile">
+        <section class="profile">
+            <div class="left">
+                <h2>個人檔案</h2>
+                <img src="006.png" alt="照片" class="profile-pic">
+                <h3>謝岸青</h3>
+                <h4>Morris</h4>
+            </div>
+            <div>
+                <br>
+                <br>
+                <br>
+                <h3>聯絡資訊</h3>
+                <hr>
+                <ul class="contact-info">
+                    <li><b>電話: 0970223290</b></li>
+                    <li><b>FB: <a href="https://www.facebook.com/profile.php?id=100009294278748&mibextid=ibOpnV" target="_blank">點我看profile</a></b></li>
+                    <li><b>IG: <a href="https://www.instagram.com/_morris_hsieh?igsh=YXN2cWd4MHA4dTU5&utm_source=qr" target="_blank">點我看profile</a></b></li>
+                    <li><b>Email: morris910906@gmail.com</b></li>
+                    <li><b>地址:新北市三重區集賢路162-3號七樓</b></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </section>
+    </article>
+    
+    <article id="experience">
+        <h2>學習及工作經歷</h2>
+        <section class="experience-section">
+            <div class="experience-item">
+                <h3>學習經歷</h3>
+                <p>我的科系:中原大學工業工程系 (2021~now)</p>
+                <img src="01.JPG" width="65%" height="230" style="border: 5px solid black; border-radius: 10px;">
 
-        <!-- 第一部分：個人檔案 -->
-        <article id="profile">
-            <h2>個人檔案</h2>
-            <section class="profile-section">
-                <div class="left">
-                    <!-- 放置圓形照片 -->
-                    <img src="your_photo.jpg" alt="你的照片" class="profile-pic">
-                    <!-- 中文名字 -->
-                    <h3>你的中文名字</h3>
-                    <!-- 英文名字 -->
-                    <h4>Your English Name</h4>
-                </div>
-                <div class="right">
-                    <!-- 聯絡資訊 -->
-                    <ul class="contact-info">
-                        <li>電話: +123456789</li>
-                        <li>FB: <a href="https://www.facebook.com/yourprofile">yourprofile</a></li>
-                        <li>IG: <a href="https://www.instagram.com/yourprofile">yourprofile</a></li>
-                        <li>Email: yourname@example.com</li>
-                        <li>地址: 你的地址</li>
-                    </ul>
-                </div>
-            </section>
+                <p>我的輔系:中原大學資管系 (2022~now)</p>
+                <img src="02.jpg"  width="65%" height="230" style="border: 5px solid black; border-radius: 10px;">
+                <p>我的高中:臺北市立內湖高中(2019~2021)</p>
+                <img src="003.jpg" width="65%" height="230" style="border: 5px solid black; border-radius: 10px;">
+            </div>
+            <div class="experience-item">
+                <h3>工作經歷</h3>
+                <p>職稱: 英文老師</p>
+                <p>地點: 桃園市中壢區思塾補習班</p>
+                <img src="005.jpg" width="50%" height="300" style="border: 5px solid black; border-radius: 10px;">
+                <p>時間: 2022/9~2024/4</p>
+                <p>工作介紹:<br><br>在我的教學生涯中，我指導過許多學生準備英文考試，並且很榮幸地見證了他<br> 們取得了令人矚目的成就。我引導的學生中有許多人成功考上了他們的前三志<br>願，這不僅是他們自己的成就，也是我教學工作的一個重要里程碑。通過我的<br>教學方法和個別化的指導，我能夠幫助學生克服困難，針對個別學生尋找問題<br>解決方法，建立信心，並在考試中取得優異的成績。</p>
+            </div>
+        </section>
+    </article>
+    
+       
+    <article id="skills">
+        <h2>技能</h2>
+        <section class="skills-section">
+            <div class="skills-list">
+                <h3>外語技能</h3>
+                <ul>
+                    <li><b>TOEIC: 920</b></li>
+                    <li><b>2023分數級距統計表:</b></li>
+                    <li><img src="008.png" width="45%" height="350"></li>
+                </ul>
+                <h3>程式技能</h3>
+                <ul>
+                    <li>C</li>
+                    <li>JAVA</li>
+                    <li>Python</li>
+                    <li>MySQL</li>
+                    <li>AutoCAD</li>
+                    <li>Android 程式設計</li>
+                </ul>
+                <h3>精熟度:</h3>
+                <li><img src="009.png" width="60%" height="350"></li>
+            </div>
+        </section>
+    </article>
+    
+    <article id="competition">
+        <h2>競賽</h2>
+        <section class="competition-section">
+            <div class="competition-item">
+                <img src="016.jpg">
+                <p><b>微星盃創意構想競賽-佳作<br>題目:智能鏡面</b></p>
+            </div>
+            <div class="competition-item">
+                <img src="011.jpg">
+                <p><b>創發盃永續創新創業競賽-冠軍</b><br><a href="https://www.cycu.edu.tw/?p=29032" target="_blank"><b>點我看更多</b></a></p>
+            </div>
+            <div class="competition-item">
+                <img src="015.jpg">
+                <p><b>中原解決問題能力競賽-佳作</b><br><a href="https://www.youtube.com/embed/fE56m_qsqCU?si=q9ueLP8I4dDQhwnW" target="_blank"><b>點我看更多</b></a></p>
+            </div>
+        </section>
         </article>
-
-        <!-- 第二部分：學習及工作經歷 -->
-        <article id="experience">
-            <h2>學習及工作經歷</h2>
-            <section class="experience-section">
-                <div class="left">
-                    <!-- 三個框框介紹 -->
-                    <div class="education">
-                        <h3>學習經歷</h3>
-                        <p>你的科系</p>
-                        <p>你的輔系</p>
-                        <p>你的高中</p>
-                    </div>
-                    <!-- 工作經歷 -->
-                    <div class="work">
-                        <h3>工作經歷</h3>
-                        <p>職稱: xxx</p>
-                        <p>地點: xxx</p>
-                        <p>時間: xxx</p>
-                        <p>工作介紹: xxx</p>
-                    </div>
-                </div>
-                <div class="right">
-                    <!-- 這裡放你的圖片位置 -->
-                    <img src="education_pic.jpg" alt="學習圖片">
-                    <img src="work_pic.jpg" alt="工作圖片">
-                </div>
-            </section>
-        </article>
-
-        <!-- 第四部分：技能 -->
-        <article id="skills">
-            <h2>技能</h2>
-            <section class="skills-section">
-                <div class="skills-list">
-                    <h3>外語技能</h3>
-                    <ul>
-                        <li>TOEIC: 920</li>
-                        <!-- 在這裡添加你的外語技能 -->
-                    </ul>
-                    <h3>程式語言技能</h3>
-                    <ul>
-                        <li>C</li>
-                        <li>JAVA</li>
-                        <li>Python</li>
-                        <li>MySQL</li>
-                        <li>AutoCAD</li>
-                        <li>Android 程式設計</li>
-                    </ul>
-                </div>
-            </section>
-        </article>
-
-        <!-- 第三部分：競賽 -->
-        <article id="competition">
-            <h2>競賽</h2>
-            <section class="competition-section">
-                <div class="competition-item">
-                    <img src="competition1_pic.jpg" alt="競賽一圖片">
-                    <p>競賽一介紹</p>
-                </div>
-                <div class="competition-item">
-                    <img src="competition2_pic.jpg" alt="競賽二圖片">
-                    <p>競賽二介紹</p>
-                </div>
-                <div class="competition-item">
-                    <!-- 假設影片連結為 YouTube -->
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>競賽三介紹</p>
-                </div>
-            </section>
-        </article>
-
         
-
-        <!-- 第五部分：社團及經歷 -->
         <article id="club">
             <h2>社團及經歷</h2>
             <section class="club-section">
                 <div class="club-item">
-                    <img src="club1_pic.jpg" alt="社團一圖片">
-                    <p>社團一介紹</p>
+                    <img src="014.jpg">
+                    <p><b>馬拉松跑友團<br><a href="page2.html" target="_blank">點我看詳情</a></b></p>
                 </div>
                 <div class="club-item">
-                    <img src="club2_pic.jpg" alt="社團二圖片">
-                    <p>社團二介紹</p>
+                    <img src="012.jpg">
+                    <p><b>東京電機大學暑期交換<br><a href="page2.html" target="_blank">點我看詳情</a></b></b></p>
                 </div>
                 <div class="club-item">
-                    <!-- 假設影片連結為 YouTube -->
                     <video controls>
-                        <source src="club3_video.mp4" type="video/mp4">
+                        <source src="014.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                    <p>社團三介紹</p>
+                    <p><b>吉他社 期末成發<br>Taylor Swift - Love Story<br>吉他:工業系 李友維<br>鼓手:工業系 謝岸青<br>歌手左:國貿系 謝恩琳<br>歌手右:國貿系 黃莉琪</b></p>
                 </div>
             </section>
         </article>
-    </div>
-</body>
-</html>
+    </main>
+    <footer>
+        <h5>Copyrgiht @ 2024 All rights reserved</h5>
+      </footer>  
+    </body>
+    </html>
